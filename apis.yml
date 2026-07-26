@@ -1,8 +1,25 @@
 aid: eaze
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/eaze.png
 name: Eaze
-description: Eaze is a company surfaced as a portfolio company of 500-global, dcm-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Eaze is a California-based cannabis marketplace and delivery platform that connects licensed
+  dispensaries and cannabis brands with adult consumers, offering online ordering and same-day
+  delivery of flower, edibles, vapes, and related products across the state. Founded in 2014 and
+  headquartered in San Francisco, Eaze operates a consumer marketplace plus a technology and
+  logistics stack for compliant retail. Backed by 500 Global and DCM Ventures, it was added to the
+  API Evangelist network as a venture-portfolio lead. Eaze does not publish a public developer API,
+  SDKs, or a developer portal; its api.eaze.com host is an internal, bot-protected surface.
 url: https://raw.githubusercontent.com/api-evangelist/eaze/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Cannabis
+- Delivery
+- Marketplace
+- E-Commerce
+- Retail
+- Logistics
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/eaze-domain-security.yml
 - type: Website
   url: https://eaze.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
