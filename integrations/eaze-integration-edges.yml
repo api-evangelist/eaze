@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/eaze/integrations
 - https://n8n.io/integrations/eaze/
@@ -9,8 +9,41 @@ checked:
 - https://composio.dev/toolkits/eaze
 - https://monid.ai/tools/eaze
 - https://n8n.io/integrations/eaze/
+- https://www.metrc.com/validated-integrators/
 - https://zapier.com/apps/eaze/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: Metrc (validated integrators)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.metrc.com/validated-integrators/
+  category: Cannabis track-and-trace
+  contract_reference:
+    register: Metrc Validated Integrators (metrc.com/validated-integrators, admin-ajax fetch_providers)
+    spec_file: null
+    standard: Metrc validated integrator (state cannabis track-and-trace)
+    role: metrc-validated-integrator
+    registered_name: Eaze Technologies Inc.
+    register_id: Eaze Technologies Inc.
+    website: https://www.eaze.com
+    matched_domain: eaze.com
+    matched_by: domain
+    signal_note: certified_products = one entry per STATE with Full or Partial Validation (level kept); Get Access
+      = API access only, participation; Metrc drops lapsed integrators, lapsed never set
+    detected_by: sweep-regulated-retail.py
+    detected: '2026-10-18'
+    certified_products:
+    - product: 'Metrc validated integration: California'
+      state: California
+      level: Full Validation
+    - product: 'Metrc validated integration: Michigan'
+      state: Michigan
+      level: Full Validation
+  detected_by: sweep-regulated-retail.py
+  first_seen: '2026-10-18'
 templates: []
